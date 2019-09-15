@@ -1,4 +1,6 @@
-package br.com.backend;
+package br.com.model.beans;
+
+import br.com.model.DAO.CadastroProjeto;
 
 import java.util.ArrayList;
 
@@ -7,16 +9,16 @@ import java.util.ArrayList;
  * Classe Cliente, herda todos os comportamentos de Pessoa
  */
 public class Cliente extends Pessoa {
-    /**
+   /* /**
      * Construtor Cliente, herdando os parametros de pessoa
      * @param codigo - codigo cliente
      * @param nome - nome do cliente
      * @param endereco - endereço do cliente
      * @param telefone - telefone do cliente
      */
-    public Cliente(int codigo, String nome, String endereco, String telefone) {
-        super(codigo, nome, endereco, telefone);
-    }
+    /*public Cliente(int codigo, String nome, String endereco, String telefone, String email) {
+        super(codigo, nome, endereco, telefone, email);
+    }*/
 
     @Override
     public int getCodigo() {
@@ -59,13 +61,24 @@ public class Cliente extends Pessoa {
     }
 
     @Override
+    public String getEmail() {
+        return super.getEmail();
+    }
+
+    @Override
+    public void setEmail(String email) {
+        super.setEmail(email);
+    }
+
+    @Override
     public String toString() {
         return "Cliente{" +
                 "codigo=" + codigo +
                 ", nome='" + nome + '\'' +
                 ", endereco='" + endereco + '\'' +
                 ", telefone='" + telefone + '\'' +
-                '}';
+                ", email=" + email + '\'' +
+                "}";
     }
 
     CadastroProjeto cp = new CadastroProjeto();

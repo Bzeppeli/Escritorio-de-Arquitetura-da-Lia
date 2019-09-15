@@ -1,4 +1,7 @@
-package br.com.backend;
+package br.com.model.DAO;
+
+import br.com.model.beans.Funcionario;
+import br.com.model.beans.Projetos;
 
 import java.util.HashMap;
 import java.util.Map;

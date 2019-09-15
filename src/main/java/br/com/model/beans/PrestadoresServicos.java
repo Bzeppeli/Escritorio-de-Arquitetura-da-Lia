@@ -1,4 +1,6 @@
-package br.com.backend;
+package br.com.model.beans;
+
+import br.com.model.DAO.PrestadorServicosMenu;
 
 import java.util.ArrayList;
 

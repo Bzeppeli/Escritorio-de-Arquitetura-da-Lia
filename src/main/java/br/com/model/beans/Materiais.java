@@ -1,4 +1,4 @@
-package br.com.backend;
+package br.com.model.beans;
 
 public class Materiais{
 

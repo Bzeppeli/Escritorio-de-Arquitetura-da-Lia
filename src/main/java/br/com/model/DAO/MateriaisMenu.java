@@ -1,4 +1,6 @@
-package br.com.backend;
+package br.com.model.DAO;
+
+import br.com.model.beans.Materiais;
 
 import java.util.ArrayList;
 import java.util.HashMap;

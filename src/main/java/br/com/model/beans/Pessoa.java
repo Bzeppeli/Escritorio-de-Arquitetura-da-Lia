@@ -1,4 +1,4 @@
-package br.com.backend;
+package br.com.model.beans;
 
 /**
  * Classe Abstrata Pessoa, ela serve para
@@ -17,7 +17,8 @@ public abstract class Pessoa {
     public String nome = null;
     public String endereco = null;
     public String telefone = null;
-
+    public String email = null;
+/*
     /**
      * Classe construtor da classe pessoa
      * @param codigo
@@ -25,12 +26,13 @@ public abstract class Pessoa {
      * @param endereco
      * @param telefone
      */
-    public Pessoa(int codigo, String nome, String endereco, String telefone) {
+  /*  public Pessoa(int codigo, String nome, String endereco, String telefone, String email) {
         this.codigo = codigo;
         this.nome = nome;
         this.endereco = endereco;
         this.telefone = telefone;
-    }
+        this.email = email;
+    }*/
 
     public int getCodigo() {
         return codigo;
@@ -63,6 +65,10 @@ public abstract class Pessoa {
     public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
+
+    public String getEmail(){ return email; }
+
+    public void setEmail(String email){ this.email = email; }
 
 
 }

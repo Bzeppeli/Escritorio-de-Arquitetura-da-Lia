@@ -1,4 +1,6 @@
-package br.com.backend;
+package br.com.model.services;
+
+import br.com.model.DAO.CadastroProjeto;
 
 import java.util.logging.Logger;
 
@@ -17,6 +19,7 @@ public class Contrato {
      */
     public void contratoCadastro(int codigoProjeto,int refCatalgo, int quantidade, int codigoPrestador,
                          int codigoFuncionario){
+        log.info("Adicionando Parametros");
         cp.pesquisarProjetos(codigoProjeto).setValorTotal(cp.orcamentoProjeto(codigoProjeto,refCatalgo,quantidade,codigoPrestador,codigoFuncionario));
         log.info("Contrato Realizado com sucesso, valor total:"
                 + cp.pesquisarProjetos(codigoProjeto).getValorTotal());

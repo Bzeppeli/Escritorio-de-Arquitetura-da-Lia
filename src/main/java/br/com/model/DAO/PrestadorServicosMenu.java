@@ -1,4 +1,6 @@
-package br.com.backend;
+package br.com.model.DAO;
+
+import br.com.model.beans.PrestadoresServicos;
 
 import java.util.HashMap;
 import java.util.Map;

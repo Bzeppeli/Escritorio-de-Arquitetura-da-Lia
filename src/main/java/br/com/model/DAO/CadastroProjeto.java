@@ -1,5 +1,8 @@
-package br.com.backend;
+package br.com.model.DAO;
 
+import br.com.model.services.LevantamentodeVisitas;
+import br.com.model.beans.PrestadoresServicos;
+import br.com.model.beans.Projetos;
 import org.joda.time.DateTime;
 
 import java.util.HashMap;
